@@ -98,6 +98,37 @@ h2{
 	margin: 0;
 }
 
+.salat:hover{
+	background-image: 
+	linear-gradient(#f1f4f950, #f1f4f950),
+	url(images/salat.jpg);
+}
+
+.svacina:hover{
+	background-image: 
+	linear-gradient(#f1f4f950, #f1f4f950),
+	url(images/chlebicek.jpg);
+}
+
+.mexicka:hover{
+	background-image: 
+	linear-gradient(#f1f4f950, #f1f4f950),
+	url(images/tacos.jpg);
+}
+
+.lusteniny:hover{
+	background-image: 
+	linear-gradient(#f1f4f950, #f1f4f950),
+	url(images/cizrna.jpg);
+}
+
+.burgery:hover{
+	background-image: 
+	linear-gradient(#f1f4f950, #f1f4f950),
+	url(images/burger.jpg);
+}
+
+
 @media screen and (min-width:480px) {
 	.recepty{
 		display: flex;
