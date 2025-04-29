@@ -4,7 +4,10 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .paticka {
@@ -33,3 +36,115 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+.salat{
+	background-image: 
+	linear-gradient(#00000050, #00000060),
+	url(images/salat.jpg);
+	min-height: 200px;
+}
+
+.svacina{
+	background-image: 
+	linear-gradient(#00000050, #00000060),
+	url(images/chlebicek.jpg);
+}
+
+.mexicka{
+	background-image: 
+	linear-gradient(#00000050, #00000060),
+	url(images/tacos.jpg);
+}
+
+.lusteniny{
+	background-image: 
+	linear-gradient(#00000050, #00000060),
+	url(images/cizrna.jpg);
+}
+
+.burgery{
+	background-image: 
+	linear-gradient(#00000050, #00000060),
+	url(images/burger.jpg);
+}
+
+
+.recept-meta{
+	display: flex;
+	justify-content: space-between;
+}
+
+h1{
+	font-size: 28px;
+	font-weight: 800;
+	margin: 0;
+}
+
+h2{
+	font-size: 18px;
+	font-weight: 800;
+	margin: 0;
+}
+
+@media screen and (min-width:480px) {
+	.recepty{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.recepty .card{
+		flex: 0 0 50%;
+		min-height: 150px;
+	}
+
+	.salat{
+	min-height: 250px;
+}
+
+	h1{
+	font-size: 36px;
+}
+
+	h2{
+	font-size: 22px;
+}
+}
+
+@media screen and (min-width:860px) {
+	.kontejner{
+		display: flex;
+	}
+
+	.salat{
+		flex: 0 0 calc(100% / 3);
+		min-height: 400px;
+	}
+
+	.recepty{
+		flex: 0 0 calc(100% / 3 * 2);
+	}
+
+	.recepty .card{
+		min-height: 200px;
+	}
+
+	h1{
+		font-size: 48px;
+	}
+	
+		h2{
+		font-size: 28px;
+	}
+}
